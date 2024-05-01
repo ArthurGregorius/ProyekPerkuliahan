@@ -21,9 +21,29 @@ Dengan menggunakan teknik transformasi Fourier yang telah diimplementasikan seca
 Percobaan ini menggunakan lagu berjudul “Tarung Bebas” oleh grup band Perunggu, berikut adalah hasil dari program ketika dijalankan
 
 ![image](https://github.com/ArthurGregorius/ProyekPerkuliahan/assets/147962819/530ffb29-f0f5-4880-99b9-eedf7043d74a)
+
 Gambar 1. Visualisasi Sinyal Audio “Tarung Bebas - Perunggu”
 
 ![image](https://github.com/ArthurGregorius/ProyekPerkuliahan/assets/147962819/2e106ae7-377c-4d01-9728-46be656ef886)
+
 Gambar 2. Spektrum Frekuensi Audio “Tarung Bebas - Perunggu”
 
 Gambar 1 di atas menunjukkan visualisasi sinyal audio yang dihasilkan oleh program. Sinyal audio tersebut direpresentasikan sebagai gelombang yang berosilasi di atas dan di bawah garis horizontal. Amplitudo gelombang menunjukkan kekuatan sinyal, sedangkan frekuensi gelombang menunjukkan seberapa sering siklus gelombang berulang. Pada gambar tersebut, terlihat bahwa sinyal audio memiliki frekuensi yang relatif konstan. Hal ini menunjukkan bahwa sinyal tersebut merupakan nada tunggal. Amplitudo sinyal juga relatif konstan, yang menunjukkan bahwa sinyal tersebut tidak terdistorsi. Informasi yang terdapat dalam gambar tersebut dapat digunakan untuk menganalisis kualitas sinyal audio
+
+Berikut adalah beberapa detail yang dapat ditemukan dari gambar tersebut:
+
+● Frekuensi: Frekuensi sinyal audio dapat dihitung dengan menghitung jumlah siklus gelombang dalam satu detik. Pada gambar tersebut, terdapat sekitar 25 siklus gelombang dalam satu detik. Oleh karena itu, frekuensi sinyal audio sekitar 25 Hz.
+
+● Amplitudo: Amplitudo sinyal audio dapat diukur dengan melihat ketinggian gelombang dari garis horizontal. Pada gambar tersebut, amplitudo sinyal audio sekitar 0,75.
+
+● Bentuk gelombang: Bentuk gelombang sinyal audio dapat dilihat dari pola osilasi gelombang. Pada gambar tersebut, bentuk gelombang sinyal audio adalah sinusoidal, yang menunjukkan bahwa sinyal tersebut merupakan nada tunggal.
+
+Gambar 2 menunjukkan spektrum sinyal audio yang dihasilkan oleh sebuah program. Spektrum mewakili distribusi energi pada berbagai frekuensi dalam sinyal audio. Sumbu horizontal menunjukkan rentang frekuensi, sedangkan sumbu vertikal menunjukkan amplitudo atau tingkat energi pada setiap frekuensi. Pada gambar tersebut, spektrum menunjukkan puncak dominan di sekitar 1000 Hz, yang menunjukkan bahwa sinyal tersebut mengandung komponen kuat pada frekuensi ini. Ini sesuai dengan frekuensi fundamental sinyal, yang menentukan nada dasar dari suara yang dihasilkan. Selain itu, spektrum menunjukkan puncak yang lebih kecil pada harmonik dari frekuensi fundamental, seperti 2000 Hz, 3000 Hz, dan 4000 Hz. Harmonik ini berkontribusi pada timbre atau kualitas nada keseluruhan dari suara. Bentuk keseluruhan spektrum menunjukkan bahwa sinyal tersebut relatif murni, dengan energi minimal pada frekuensi di luar deret harmonik. Ini berarti sinyal tersebut bebas dari distorsi atau noise yang signifikan. Informasi yang terdapat dalam spektrum dapat digunakan untuk menganalisis karakteristik sinyal audio, seperti nada dasar, timbre, dan kemurniannya.
+
+Berikut adalah beberapa detail yang dapat ditemukan dari gambar tersebut:
+
+● Frekuensi Fundamental: Frekuensi fundamental dari sinyal audio kira-kira 1000 Hz.
+
+● Harmonik: Spektrum menunjukkan harmonik dari frekuensi fundamental pada 2000 Hz, 3000 Hz, dan 4000 Hz.
+
+● Timbre: Bentuk keseluruhan spektrum menunjukkan bahwa sinyal tersebut memiliki timbre yang relatif murni.
