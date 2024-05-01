@@ -33,6 +33,29 @@ Tujuan dari penelitian ini adalah untuk mengimplementasikan sistem kontrol suhu 
 
 5. Bola Lampu. Bola Lampu adalah alat yang dapat digunakan untuk menghasilkan panas. Bola lampu yang digunakan dalam sistem kontrol suhu umumnya adalah bola lampu pijar atau bola lampu halogen. Bola lampu pijar bekerja dengan memanaskan filamen tungsten hingga mencapai suhu yang tinggi. Filamen tungsten kemudian akan memancarkan panas ke lingkungan. Bohlam halogen bekerja dengan menggunakan gas halogen untuk meningkatkan suhu filamen tungsten. Filamen tungsten kemudian akan memancarkan panas ke lingkungan.
 
+![lampu-pijar-vintage-model-bohlam-edison](https://github.com/ArthurGregorius/ProyekPerkuliahan/assets/147962819/71c1234d-2ee0-423e-91c6-46baa8f2467d)
+
 6. Liquid Crystal Display (LCD). LCD adalah layar yang menggunakan teknologi kristal cair untuk menampilkan gambar. LCD yang digunakan dalam sistem kontrol suhu umumnya adalah LCD 16x2 atau LCD 20x4. LCD 16x2 memiliki 16 karakter per baris dan 2 baris. LCD 20x4 memiliki 20 karakter per baris dan 4 baris.
 
 ![f2da2ec1-c8d9-4f37-82a8-9414a06e04e2](https://github.com/ArthurGregorius/ProyekPerkuliahan/assets/147962819/95d66c44-bcb3-45ed-ae60-475ff3949944)
+
+### Desain
+
+![image](https://github.com/ArthurGregorius/ProyekPerkuliahan/assets/147962819/da0a1627-184b-4405-b421-9f5d38b4229a)
+
+Rancangan Desain Sistem
+
+
+![image](https://github.com/ArthurGregorius/ProyekPerkuliahan/assets/147962819/0ea6b2fb-7904-43cc-8218-6eca7577001a)
+
+Protoype Sistem
+
+Tabel Komponen
+
+![image](https://github.com/ArthurGregorius/ProyekPerkuliahan/assets/147962819/d3ba491c-1063-4baf-a22a-1eb4632333db)
+
+Cara Kerja
+1. Arduino akan membaca nilai analog dari sensor suhu LM35 setiap 5 detik.
+2. Nilai analog tersebut kemudian akan dikonversi ke suhu dalam derajat Celcius.
+3. Jika suhu di bawah 37.5°C, maka Arduino akan menyalakan Relay untuk menaikkan suhu.
+4. Jika suhu di atas 39.5°C, maka Arduino akan mematikan Relay untuk menurunkan suhu.
