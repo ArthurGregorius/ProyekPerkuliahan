@@ -1,6 +1,7 @@
 # Analisis Audio Dengan Transformasi Fourier
 
 Transformasi Fourier adalah teknik matematis yang digunakan untuk menganalisis sinyal dalam domain waktu dan mentransformasikannya ke domain frekuensi. Konsep dasarnya didasarkan pada gagasan bahwa setiap sinyal kompleks dalam domain waktu dapat direpresentasikan sebagai jumlah dari sejumlah gelombang sinusoidal atau kosinusoidal dengan amplitudo dan frekuensi tertentu. Dengan kata lain, sinyal-sinyal yang kompleks dapat dipecah menjadi komponen-komponen sederhana dalam domain frekuensi. Proses kerja Transformasi Fourier dalam mengubah sinyal dari domain waktu ke domain frekuensi dapat dijelaskan sebagai berikut:
+
 ● Pemisahan Sinyal: Pertama, sinyal dalam domain waktu f(t) dipecah menjadi sejumlah komponen sinusoidal dan kosinusoidal dengan menggunakan fungsi-fungsi sinus dan kosinus.
 ● Pengukuran Amplitudo dan Frekuensi: Setiap komponen sinusoidal atau kosinusoidal memiliki amplitudo dan frekuensi tertentu. Amplitudo menyatakan seberapa besar gelombang tersebut, sedangkan frekuensi menunjukkan berapa kali gelombang tersebut berulang dalam satu unit waktu.
 ● Representasi dalam Domain Frekuensi: Kemudian, amplitudo dan frekuensi dari setiap komponen ini direpresentasikan dalam domain frekuensi. Ini memungkinkan kita untuk melihat kontribusi relatif dari setiap frekuensi terhadap sinyal keseluruhan.
