@@ -19,4 +19,11 @@ Dalam konteks komunikasi digital, Transformasi Fourier memfasilitasi modulasi da
 Dengan menggunakan teknik transformasi Fourier yang telah diimplementasikan secara efisien dalam program yang dikembangkan telah menghasilkan analisis mendalam terhadap sinyal suara yang diteliti. Proses analisis ini memungkinkan untuk secara akurat membedah sinyal suara menjadi domain frekuensi, mengungkapkan komponen-komponen penting yang tersembunyi di dalamnya. Melalui program yang dirancang khusus, dapat dengan cepat merespons perubahan dalam data sinyal suara dan menghasilkan visualisasi yang jelas tentang distribusi amplitudo dan frekuensi dari berbagai komponen dalam sinyal tersebut. Hasil analisis tersebut menunjukkan bahwa program yang dikembangkan mampu mengidentifikasi dan mengekstraksi fitur-fitur kunci, seperti amplitudo dominan dan pola periodik, yang menjadi fokus utama dalam pemrosesan lebih lanjut. Dengan demikian, dapat menghasilkan wawasan yang lebih mendalam tentang struktur dan karakteristik dari sinyal suara yang diamati, serta memungkinkan untuk membuat kesimpulan yang lebih meyakinkan dan relevan terkait dengan tujuan dan konteks penelitian ini.
 
 Percobaan ini menggunakan lagu berjudul “Tarung Bebas” oleh grup band Perunggu, berikut adalah hasil dari program ketika dijalankan
+
 ![image](https://github.com/ArthurGregorius/ProyekPerkuliahan/assets/147962819/530ffb29-f0f5-4880-99b9-eedf7043d74a)
+Gambar 1. Visualisasi Sinyal Audio “Tarung Bebas - Perunggu”
+
+![image](https://github.com/ArthurGregorius/ProyekPerkuliahan/assets/147962819/2e106ae7-377c-4d01-9728-46be656ef886)
+Gambar 2. Spektrum Frekuensi Audio “Tarung Bebas - Perunggu”
+
+Gambar 1 di atas menunjukkan visualisasi sinyal audio yang dihasilkan oleh program. Sinyal audio tersebut direpresentasikan sebagai gelombang yang berosilasi di atas dan di bawah garis horizontal. Amplitudo gelombang menunjukkan kekuatan sinyal, sedangkan frekuensi gelombang menunjukkan seberapa sering siklus gelombang berulang. Pada gambar tersebut, terlihat bahwa sinyal audio memiliki frekuensi yang relatif konstan. Hal ini menunjukkan bahwa sinyal tersebut merupakan nada tunggal. Amplitudo sinyal juga relatif konstan, yang menunjukkan bahwa sinyal tersebut tidak terdistorsi. Informasi yang terdapat dalam gambar tersebut dapat digunakan untuk menganalisis kualitas sinyal audio
