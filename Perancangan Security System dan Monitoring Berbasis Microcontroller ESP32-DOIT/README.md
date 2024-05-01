@@ -31,7 +31,11 @@ A. Skema Wiring
 
 ![image](https://github.com/ArthurGregorius/ProyekPerkuliahan/assets/147962819/4d69294b-5783-4009-8698-c18f657fa998)
 
+Rancangan Desain Sistem
+
 ![image](https://github.com/ArthurGregorius/ProyekPerkuliahan/assets/147962819/d44d6d4b-32ac-4989-9586-32f2659ea90f)
+
+Prototype Sistem
 
 Penjelasan Cara Kerja :
 1. Powerbank digunakan untuk memberikan sumber daya berupa tegangan ke dalam ESP32, buzzer, serta sensor PIR.
