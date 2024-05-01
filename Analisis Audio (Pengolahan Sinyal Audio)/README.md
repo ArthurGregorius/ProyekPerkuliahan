@@ -24,9 +24,11 @@ Percobaan ini menggunakan lagu berjudul “Tarung Bebas” oleh grup band Perung
 
 Gambar 1. Visualisasi Sinyal Audio “Tarung Bebas - Perunggu”
 
+
 ![image](https://github.com/ArthurGregorius/ProyekPerkuliahan/assets/147962819/2e106ae7-377c-4d01-9728-46be656ef886)
 
 Gambar 2. Spektrum Frekuensi Audio “Tarung Bebas - Perunggu”
+
 
 Gambar 1 di atas menunjukkan visualisasi sinyal audio yang dihasilkan oleh program. Sinyal audio tersebut direpresentasikan sebagai gelombang yang berosilasi di atas dan di bawah garis horizontal. Amplitudo gelombang menunjukkan kekuatan sinyal, sedangkan frekuensi gelombang menunjukkan seberapa sering siklus gelombang berulang. Pada gambar tersebut, terlihat bahwa sinyal audio memiliki frekuensi yang relatif konstan. Hal ini menunjukkan bahwa sinyal tersebut merupakan nada tunggal. Amplitudo sinyal juga relatif konstan, yang menunjukkan bahwa sinyal tersebut tidak terdistorsi. Informasi yang terdapat dalam gambar tersebut dapat digunakan untuk menganalisis kualitas sinyal audio
 
