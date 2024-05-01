@@ -57,6 +57,7 @@ Hasil & Analisa
 3. Sensor terhubung dengan internet dan dapat mengirim pesan peringatan ke device pengguna melalui aplikasi Telegram dimanapun device pengguna berada.
 4. Sistem membutuhkan waktu kalibrasi untuk Sensor PIR selama: 10 - 60 Detik
 5. Tabel Pengujian Sistem
+
    ![image](https://github.com/ArthurGregorius/ProyekPerkuliahan/assets/147962819/067f3113-1607-4a47-96e5-9506383ca581)
 
    ![image](https://github.com/ArthurGregorius/ProyekPerkuliahan/assets/147962819/bea15ee9-d39b-40ff-8b66-9647ad8fec38)
