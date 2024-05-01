@@ -2,13 +2,10 @@
 
 Transformasi Fourier adalah teknik matematis yang digunakan untuk menganalisis sinyal dalam domain waktu dan mentransformasikannya ke domain frekuensi. Konsep dasarnya didasarkan pada gagasan bahwa setiap sinyal kompleks dalam domain waktu dapat direpresentasikan sebagai jumlah dari sejumlah gelombang sinusoidal atau kosinusoidal dengan amplitudo dan frekuensi tertentu. Dengan kata lain, sinyal-sinyal yang kompleks dapat dipecah menjadi komponen-komponen sederhana dalam domain frekuensi. Proses kerja Transformasi Fourier dalam mengubah sinyal dari domain waktu ke domain frekuensi dapat dijelaskan sebagai berikut:
 
-● Pemisahan Sinyal: Pertama, sinyal dalam domain waktu f(t) dipecah menjadi sejumlah komponen sinusoidal dan kosinusoidal dengan menggunakan fungsi-fungsi sinus dan kosinus.
-
-● Pengukuran Amplitudo dan Frekuensi: Setiap komponen sinusoidal atau kosinusoidal memiliki amplitudo dan frekuensi tertentu. Amplitudo menyatakan seberapa besar gelombang tersebut, sedangkan frekuensi menunjukkan berapa kali gelombang tersebut berulang dalam satu unit waktu.
-
-● Representasi dalam Domain Frekuensi: Kemudian, amplitudo dan frekuensi dari setiap komponen ini direpresentasikan dalam domain frekuensi. Ini memungkinkan kita untuk melihat kontribusi relatif dari setiap frekuensi terhadap sinyal keseluruhan.
-
-● Spektrum Frekuensi: Hasil dari Transformasi Fourier adalah spektrum frekuensi, yang menunjukkan amplitudo dan fase dari setiap komponen frekuensi yang menyusun sinyal. Spektrum ini sering direpresentasikan dalam bentuk grafik, di mana sumbu horizontal menunjukkan frekuensi dan sumbu vertikal menunjukkan amplitudo atau kekuatan setiap frekuensi.
+- Pemisahan Sinyal: Pertama, sinyal dalam domain waktu f(t) dipecah menjadi sejumlah komponen sinusoidal dan kosinusoidal dengan menggunakan fungsi-fungsi sinus dan kosinus.
+- Pengukuran Amplitudo dan Frekuensi: Setiap komponen sinusoidal atau kosinusoidal memiliki amplitudo dan frekuensi tertentu. Amplitudo menyatakan seberapa besar gelombang tersebut, sedangkan frekuensi menunjukkan berapa kali gelombang tersebut berulang dalam satu unit waktu.
+- Representasi dalam Domain Frekuensi: Kemudian, amplitudo dan frekuensi dari setiap komponen ini direpresentasikan dalam domain frekuensi. Ini memungkinkan kita untuk melihat kontribusi relatif dari setiap frekuensi terhadap sinyal keseluruhan.
+- Spektrum Frekuensi: Hasil dari Transformasi Fourier adalah spektrum frekuensi, yang menunjukkan amplitudo dan fase dari setiap komponen frekuensi yang menyusun sinyal. Spektrum ini sering direpresentasikan dalam bentuk grafik, di mana sumbu horizontal menunjukkan frekuensi dan sumbu vertikal menunjukkan amplitudo atau kekuatan setiap frekuensi.
 
 Dengan menggunakan Transformasi Fourier, kita dapat memahami struktur frekuensi dari sinyal-sinyal kompleks, yang berguna dalam berbagai aplikasi seperti pemrosesan sinyal, komunikasi, pengolahan gambar, dan banyak lagi. Ini memungkinkan kita untuk menganalisis, memanipulasi, dan memahami sinyal-sinyal yang kompleks dengan lebih baik.
 
@@ -34,18 +31,13 @@ Gambar 1 di atas menunjukkan visualisasi sinyal audio yang dihasilkan oleh progr
 
 Berikut adalah beberapa detail yang dapat ditemukan dari gambar tersebut:
 
-● Frekuensi: Frekuensi sinyal audio dapat dihitung dengan menghitung jumlah siklus gelombang dalam satu detik. Pada gambar tersebut, terdapat sekitar 25 siklus gelombang dalam satu detik. Oleh karena itu, frekuensi sinyal audio sekitar 25 Hz.
-
-● Amplitudo: Amplitudo sinyal audio dapat diukur dengan melihat ketinggian gelombang dari garis horizontal. Pada gambar tersebut, amplitudo sinyal audio sekitar 0,75.
-
-● Bentuk gelombang: Bentuk gelombang sinyal audio dapat dilihat dari pola osilasi gelombang. Pada gambar tersebut, bentuk gelombang sinyal audio adalah sinusoidal, yang menunjukkan bahwa sinyal tersebut merupakan nada tunggal.
+- Frekuensi: Frekuensi sinyal audio dapat dihitung dengan menghitung jumlah siklus gelombang dalam satu detik. Pada gambar tersebut, terdapat sekitar 25 siklus gelombang dalam satu detik. Oleh karena itu, frekuensi sinyal audio sekitar 25 Hz.
+- Amplitudo: Amplitudo sinyal audio dapat diukur dengan melihat ketinggian gelombang dari garis horizontal. Pada gambar tersebut, amplitudo sinyal audio sekitar 0,75.
+- Bentuk gelombang: Bentuk gelombang sinyal audio dapat dilihat dari pola osilasi gelombang. Pada gambar tersebut, bentuk gelombang sinyal audio adalah sinusoidal, yang menunjukkan bahwa sinyal tersebut merupakan nada tunggal.
 
 Gambar 2 menunjukkan spektrum sinyal audio yang dihasilkan oleh sebuah program. Spektrum mewakili distribusi energi pada berbagai frekuensi dalam sinyal audio. Sumbu horizontal menunjukkan rentang frekuensi, sedangkan sumbu vertikal menunjukkan amplitudo atau tingkat energi pada setiap frekuensi. Pada gambar tersebut, spektrum menunjukkan puncak dominan di sekitar 1000 Hz, yang menunjukkan bahwa sinyal tersebut mengandung komponen kuat pada frekuensi ini. Ini sesuai dengan frekuensi fundamental sinyal, yang menentukan nada dasar dari suara yang dihasilkan. Selain itu, spektrum menunjukkan puncak yang lebih kecil pada harmonik dari frekuensi fundamental, seperti 2000 Hz, 3000 Hz, dan 4000 Hz. Harmonik ini berkontribusi pada timbre atau kualitas nada keseluruhan dari suara. Bentuk keseluruhan spektrum menunjukkan bahwa sinyal tersebut relatif murni, dengan energi minimal pada frekuensi di luar deret harmonik. Ini berarti sinyal tersebut bebas dari distorsi atau noise yang signifikan. Informasi yang terdapat dalam spektrum dapat digunakan untuk menganalisis karakteristik sinyal audio, seperti nada dasar, timbre, dan kemurniannya.
 
 Berikut adalah beberapa detail yang dapat ditemukan dari gambar tersebut:
-
-● Frekuensi Fundamental: Frekuensi fundamental dari sinyal audio kira-kira 1000 Hz.
-
-● Harmonik: Spektrum menunjukkan harmonik dari frekuensi fundamental pada 2000 Hz, 3000 Hz, dan 4000 Hz.
-
-● Timbre: Bentuk keseluruhan spektrum menunjukkan bahwa sinyal tersebut memiliki timbre yang relatif murni.
+- Frekuensi Fundamental: Frekuensi fundamental dari sinyal audio kira-kira 1000 Hz.
+- Harmonik: Spektrum menunjukkan harmonik dari frekuensi fundamental pada 2000 Hz, 3000 Hz, dan 4000 Hz.
+- Timbre: Bentuk keseluruhan spektrum menunjukkan bahwa sinyal tersebut memiliki timbre yang relatif murni.
