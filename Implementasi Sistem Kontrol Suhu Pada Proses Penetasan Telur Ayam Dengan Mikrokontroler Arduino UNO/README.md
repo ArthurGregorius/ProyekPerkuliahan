@@ -59,3 +59,43 @@ Cara Kerja
 2. Nilai analog tersebut kemudian akan dikonversi ke suhu dalam derajat Celcius.
 3. Jika suhu di bawah 37.5°C, maka Arduino akan menyalakan Relay untuk menaikkan suhu.
 4. Jika suhu di atas 39.5°C, maka Arduino akan mematikan Relay untuk menurunkan suhu.
+
+### Hasil dan Analisa
+
+Dari sistem kontrol yang telah dirancang, hasil signifikan yang diperoleh yaitu, pertama, lampu pijar di dalam inkubator akan menyala ketika sensor suhu membaca nilai yang kurang atau sama dengan 37.5℃. Sebaliknya, lampu akan padam apabila suhu yang terdeteksi oleh sensor mencapai atau melebihi 39.5℃. Rentang suhu ideal yaitu antara 37.5℃ hingga 39.5℃, dianggap sebagai kondisi optimal untuk pengeraman telur ayam. Di luar rentang tersebut, baik suhu yang terlalu rendah maupun terlalu tinggi dapat menghambat proses pengeraman secara optimal. Penting untuk dicatat bahwa lampu memiliki delay selama 5 detik sebelum menyala atau padam setelah sensor membaca suhu. Keputusan ini diambil dengan tujuan agar panas dari lampu dapat merambat dan merubah temperatur di dalam kandang inkubator dengan lebih gradual.
+
+Berdasarkan hasil dan analisis tersebut, dapat disimpulkan bahwa sistem kontrol suhu yang telah dirancang dapat beroperasi dengan baik dan memiliki potensi besar untuk memberikan manfaat yang signifikan bagi peternak ayam. Kemampuan sistem ini untuk menjaga suhu dalam rentang optimal, didukung oleh akurasi sensor, kinerja relay yang handal, dan tampilan suhu yang jelas pada LCD, menjadikan alat ini sebagai solusi yang efektif dan efisien dalam mendukung proses pengeraman telur ayam.
+
+Tabel Pengujian Sistem
+1. Pengujian pada kondisi siang hari (didalam ruangan)
+
+![image](https://github.com/ArthurGregorius/ProyekPerkuliahan/assets/147962819/a77b6f84-0de2-4604-95a8-70b4459e1921)
+
+Pada pengujian pertama, sistem di uji pada kondisi siang hari di dalam kamar kos dengan kondisi ada satu kipas angina yang menyala sehingga suhu dalam ruangan tidak begitu panas.
+
+2. Pengujian pada kondisi malam hari (didalam ruangan)
+
+![image](https://github.com/ArthurGregorius/ProyekPerkuliahan/assets/147962819/f6ba739f-913c-4cd2-a9ac-f81418b329e4)
+
+Pada kondisi kedua, sistem di uji di dalam ruangan dalam kondisi malam hari sehabis hujan. Suhu terdeteksi lebih dingin dikarenakan suhu ruangan yang juga semakin dingin dikarenakan habis hujan.
+
+3. Pengujian pada kondisi siang hari (di luar ruangan)
+
+![image](https://github.com/ArthurGregorius/ProyekPerkuliahan/assets/147962819/b49a935c-7ae8-4671-833d-899c6869257f)
+
+Pada kondisi ketiga, sistem di uji di luar ruangan pada kondisi siang hari tepatnya sekitar jam 12 siang dimana suhu sekitar lebih panas karena terik matahari di daerah Semarang. Suhu yang terdeteksi cenderung stabil, hal ini dikarenakan suhu yang panas merupakan suhu yang efektif untuk proses pengeraman telur ayam.
+
+4. Pengujian pada kondisi malam hari (di luar ruangan)
+
+![image](https://github.com/ArthurGregorius/ProyekPerkuliahan/assets/147962819/197994fe-0182-48f1-bb75-c6a764d3fd1c)
+
+Pada kondisi keempat, sistem di uji di kondisi malam hari yang biasa (tidak ada hujan), namun suhu yang terdeteksi tetap terpengaruh karena kondisi diluar ruangan dimana langsung terasa dinginnya.
+
+Proyek ini merupakan upaya yang inovatif dan relevan dalam pengembangan teknologi pertanian. Sistem ini dirancang untuk memberikan solusi otomatis dalam menjaga suhu optimal untuk pengeraman telur ayam, sebuah aspek kritis dalam keberhasilan penetasan dan kesehatan embrio. Melalui pembacaan suhu yang terus-menerus dari sensor LM35, sistem dapat
+merespons perubahan suhu dengan cepat, memastikan bahwa kondisi ideal tetap terjaga.
+
+Penggunaan lampu pijar sebagai elemen pemanas yang dikontrol oleh relay memberikan kontrol suhu yang lebih terukur dan tepat. Adanya delay 5 detik sebelum lampu menyala atau padam setelah pembacaan suhu bertujuan agar panas dapat merambat dengan lebih gradual di dalam inkubator. Selain itu, penggunaan LCD sebagai antarmuka pengguna memungkinkan pemantauan real-time suhu di dalam mesin penetas, memberikan transparansi dan kontrol langsung kepada pengguna. Optimasi integrasi dan interaksi antara mikrokontroler Arduino, sensor suhu LM35, lampu bohlam, serta LCD penting untuk mencapai suhu yang maksimal dalam sistem pengeraman telur ayam. Pemrograman yang cermat untuk pembacaan suhu, koordinasi efisien dengan relay untuk mengontrol lampu bohlam, dan integrasi LCD untuk tampilan informasi real-time. Interaksi yang baik antara mikrokontroler dan komponen lainnya memberikan stabilitas suhu yang diperlukan untuk keberhasilan pengeraman.
+
+Analisis komponen sistem menunjukkan bahwa sensor suhu LM35 memiliki akurasi yang memadai, relay dapat diandalkan untuk mengontrol daya listrik pada lampu pijar, dan LCD memberikan informasi suhu yang jelas. Implementasi sistem kontrol suhu menggunakan mikrokontroler dapat signifikan meningkatkan efisiensi dalam proses penetasan telur ayam. Sistem ini memungkinkan pengawasan otomatis dan presisi terhadap suhu dalam inkubator, yang merupakan faktor kritis untuk keberhasilan penetasan. Mikrokontroler, seperti Arduino, membaca secara terus-menerus nilai suhu dari sensor LM35 dengan interval waktu yang singkat, memberikan respons cepat terhadap perubahan suhu.
+
+Secara keseluruhan, proyek ini memberikan kontribusi positif terhadap efisiensi dan keberhasilan proses penetasan telur ayam. Sistem ini dapat dianggap sebagai solusi yang baik untuk mendukung kegiatan peternakan dengan teknologi yang canggih dan otomatis, meningkatkan peluang keberhasilan penetasan, serta memberikan manfaat bagi para peternak ayam dalam mengoptimalkan kondisi lingkungan inkubasi
