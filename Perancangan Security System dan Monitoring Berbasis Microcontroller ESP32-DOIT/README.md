@@ -6,18 +6,18 @@ Dalam kemajuan teknologi, khususnya dalam konteks IoT (Internet of Things), memb
 
 Sistem keamanan dan monitoring yang berbasis ESP-32 tak hanya menawarkan keunggulan dalam hal jangkauan, akan tetapi juga kemampuan untuk dapat terhubung dengan berbagai sensor dan perangkat pendukung lainnya. Pada alat yang kami buat, kami menggunakan Sensor PIR (Passive Infra red Receiver) dan dikombinasikan dengan pesan Bot Telegram. 
 
-Tujuan
+### Tujuan
 1. Pada rancangan sistem yang dibuat, telah menggunakan beberapa komponen gabungan dan sensor yang akurat. Sehingga sistem dapat digunakan sebagai alat keamanan yang optimal. Sistem perancangan ini diharapkan dapat menjaga keamanan dan dapat digunakan untuk mengantisipasi kejadian-kejadian yang tidak diinginkan.
 2. Sistem yang telah dibuat dapat diimplementasi dimana saja, sebagai contoh pada konteks lingkungan atau perkantoran dapat digunakan untuk mengantisipasi akan terjadinya pembobolan atau kemalingan. Sistem ini dapat digunakan untuk meminimalisir kejahatan yang terjadi di lingkungan sekitar.
 3. Sistem keamanan yang dikombinasikan dari mikrokontroller dan juga sensor PIR dapat sangat membantu dalam hal keamanan. Dengan Rancangan Sistem ini dapat meminimalisir dari kejadian-kejadian kejahatan dan juga yang lainnya.
 
-Dasar Teori
+### Dasar Teori
 1. Konsep Otomatisasi. Otomatisasi mengacu pada penggunaan teknologi untuk mengendalikan atau mengeksekusi tugas-tugas tertentu tanpa adanya intervensi manusia langsung. Dalam konteks Sistem Security, otomatisasi dapat mengoptimalkan keamanan pada suatu tempat tertentu serta memberikan kemudahan untuk pengguna dalam melakukan penjagaan dan pengawasan pada suatu tempat tanpa harus berada di tempat tersebut. Prinsip dasar otomatisasi adalah memanfaatkan sensor untuk mendeteksi kondisi tertentu dan menggunakan aktuator untuk merespons kondisi tersebut, semua dikendalikan oleh mikrokontroler.
 2. ESP32-DOIT. ESP32 adalah modul mikrokontroler terintegrasi yang memiliki fitur lengkap dan kinerja tinggi. Modul ini merupakan pengembangan dari ESP8266, yang merupakan modul WiFi populer.ESP32 memiliki dua prosesor komputasi, satu prosesor untuk mengelola jaringan WIFI dan Bluetooth, serta satu prosesor lainnya untuk menjalankan aplikasi. Dilengkapi dengan memori RAM yang cukup besar untuk menyimpan data. Fitur yang berguna seperti TCP/IP, HTTP, dan FTP. Modul ini juga dilengkapi fitur pemrosesan sinyal analog, dukungan untuk sensor, dan dukungan untuk perangkat masukan/keluaran (I/O) digital. ESP32 juga memiliki dukungan untuk konektivitas Bluetooth. Dapat digunakan untuk mengendalikan perangkat yang terhubung dengan Bluetooth.
 3. Modul Sensor PIR (Passive Infrared Receiver). Sensor PIR atau Passive Infrared Receiver merupakan sensor yang digunakan untuk mendeteksi adanya pancaran sinar infra red dari suatu objek. Sensor PIR memiliki sifat pasif, yang berarti tidak memancarkan sinar infrared tetapi hanya dapat menerima radiasi sinar infra red dari luar. Sensor PIR dapat mendeteksi radiasi dari berbagai objek karena semua objek memancarkan energi radiasi, seperti ketika terdeteksi sebuah gerakan dari sumber infra red dengan suhu tertentu yaitu manusia mencoba melewati sumber infra red yang lain misalnya dinding, maka sensor akan membandingkan pancaran infra red yang diterima setiap satuan waktu, sehingga jika ada pergerakan maka akan terjadi perubahan pembacaan pada sensor. Sensor PIR terdiri dari beberapa bagian yaitu, Lensa Fresnel, Penyaring Infra Red, Sensor Pyroelektrik, Penguat Amplifier dan Komparator.
 4. Buzzer. Buzzer adalah sebuah komponen elektronika yang mengubah energy listrik menjadi energy Mekanik atau getaran. Energy getaran ini akan menghasilkan suara. Buzzer juga biasanya digunakan untuk indikator suara untuk alarm, input keypad, dan pemberitahuan kerusakan pada sebuah sistem elektronik, seperti di motherboard komputer. Buzzer ini biasanya memiliki tegangan kerja antara 3 volt sampai dengan 12 volt.
 
-Desain
+### Desain
 
 A. Skema Wiring
 
@@ -51,7 +51,7 @@ Penjelasan:
 2. BACA SENSOR: Merupakan proses looping pada bagian utama dari program. Pada bagian loop ini, nilai sensor akan dibaca terus-menerus.
 3. DECISION: Jika sensor mendeteksi gerakan, sistem akan mengirimkan pesan melalui Bot Telegram dan akan mengaktifkan Buzzer sebagai alarm. Jika tidak, program akan tetap berada dalam loop ini.
 
-Hasil & Analisa
+### Hasil & Analisa
 1. Batasan jarak yang dapat dideteksi oleh sensor sejauh : 5 meter.
 2. Sensor dapat mendeteksi objek yang bergerak cepat.
 3. Sensor terhubung dengan internet dan dapat mengirim pesan peringatan ke device pengguna melalui aplikasi Telegram dimanapun device pengguna berada.
