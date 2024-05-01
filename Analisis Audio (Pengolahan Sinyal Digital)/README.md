@@ -49,4 +49,3 @@ Berikut adalah beberapa detail yang dapat ditemukan dari gambar tersebut:
 ● Harmonik: Spektrum menunjukkan harmonik dari frekuensi fundamental pada 2000 Hz, 3000 Hz, dan 4000 Hz.
 
 ● Timbre: Bentuk keseluruhan spektrum menunjukkan bahwa sinyal tersebut memiliki timbre yang relatif murni.
-
