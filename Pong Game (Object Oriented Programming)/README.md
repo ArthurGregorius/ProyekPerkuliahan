@@ -1,6 +1,6 @@
 # Pong Game w/ Java
 
-Game ini dibuat untuk mengasah kemampuan saya dalam Object Oriented Programming atau OOP dimana saya menggunakan bahasa pemrograman Java beserta JavaGUI untuk membuat game tersebut
+Game ini dibuat untuk mengasah kemampuan saya dalam Object Oriented Programming atau OOP dimana saya menggunakan bahasa pemrograman Java beserta JavaGUI untuk membuat game tersebut. Terdapat 7 Class yang merangkai program game antara lain; class Game
 
 Berikut adalah diagram UML yang merepresentasikan program game tersebut
 
