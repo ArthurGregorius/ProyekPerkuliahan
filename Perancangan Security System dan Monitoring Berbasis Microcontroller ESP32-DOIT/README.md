@@ -58,7 +58,7 @@ C. Diagram Flowchart
 
 ![image](https://github.com/ArthurGregorius/ProyekPerkuliahan/assets/147962819/c59ed054-64c4-4e8c-b1cf-b2e3e53076c5)
 
-
+Penjelasan:
 1. SETUP: Merupakan proses insialisasi awal yang meiliputi koneksi Wi-Fi, pengaturan token Bot Telegram, dan pengaturan pin untuk buzzer dan sensor.
 2. BACA SENSOR: Merupakan proses looping pada bagian utama dari program. Pada bagian loop ini, nilai sensor akan dibaca terus-menerus.
 3. DECISION: Jika sensor mendeteksi gerakan, sistem akan mengirimkan pesan melalui Bot Telegram dan akan mengaktifkan Buzzer sebagai alarm. Jika tidak, program akan tetap berada dalam loop ini.
