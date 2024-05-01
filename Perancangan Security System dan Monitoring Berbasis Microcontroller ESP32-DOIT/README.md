@@ -18,6 +18,7 @@ Dasar Teori
 4. Buzzer. Buzzer adalah sebuah komponen elektronika yang mengubah energy listrik menjadi energy Mekanik atau getaran. Energy getaran ini akan menghasilkan suara. Buzzer juga biasanya digunakan untuk indikator suara untuk alarm, input keypad, dan pemberitahuan kerusakan pada sebuah sistem elektronik, seperti di motherboard komputer. Buzzer ini biasanya memiliki tegangan kerja antara 3 volt sampai dengan 12 volt.
 
 Desain
+
 A. Skema Wiring
 
 ![image](https://github.com/ArthurGregorius/ProyekPerkuliahan/assets/147962819/4d69294b-5783-4009-8698-c18f657fa998)
@@ -30,3 +31,22 @@ Penjelasan Cara Kerja :
 3. Sensor gerak PIR berfungsi sebagai pendeteksi objek bergerak yang melewati area sensor tersebut. Sensor akan menghasilkan output berupa sinyal ke ESP32 dan akan diteruskan ke dalam buzzer pada waktu yang bersamaan. Selain itu, pesan peringatan juga akan dikirimkan kepada pengguna via Telegram.
 4. ESP32 berfungsi untuk mengirimkan sinyal ke dua komponen, pertama yakni Buzzer dan kedua ke aplikasi Telegram yang akan dikirim secara bersamaan.
 5. Buzzer berfungsi sebagai alarm peringatan jika ada objek yang melintas.
+
+B. Diagram Blok
+
+![image](https://github.com/ArthurGregorius/ProyekPerkuliahan/assets/147962819/c3b8df29-ee4f-484a-b962-98a029c4da8e)
+
+Penjelasan:
+1. PIR SENSOR: Berperan sebagai pengindera gerakan. Ketika gerakan terdeteksi, sensor mengirimkan sinyal elektrik ke ESP-32 untuk memberi tahu bahwa ada gerakan yang terjadi.
+2. ESP-32 DOIT: Bertanggung jawab untuk membaca nilai yang diberikan oleh sensor PIR. Ketika gerakan terdeteksi, ESP-32 mengeksekusi tindakan tertentu, seperti mengirim notifikasi melalui Telegram dan mengontrol buzzer untuk memberi peringatan.
+3. PESAN NOTIFIKASI: Ketika ESP-32 mendeteksi gerakan melalui sensor PIR, itu memicu pengiriman pesan notifikasi melalui layanan Telegram. Pesan ini berfungsi sebagai peringatan kepada pengguna atau pihak yang terkait bahwa gerakan telah terdeteksi di area yang diamati.
+4. BUZZER: Buzzer diaktifkan oleh ESP-32 ketika gerakan terdeteksi. Ini memberikan peringatan suara sebagai tambahan kepada notifikasi visual melalui Telegram. Tujuannya adalah untuk memberi peringatan kepada orang-orang di sekitar bahwa gerakan telah terdeteksi.
+
+C. Diagram Flowchart
+
+![image](https://github.com/ArthurGregorius/ProyekPerkuliahan/assets/147962819/c59ed054-64c4-4e8c-b1cf-b2e3e53076c5)
+
+Penjelasan:
+1. SETUP: Merupakan proses insialisasi awal yang meiliputi koneksi Wi-Fi, pengaturan token Bot Telegram, dan pengaturan pin untuk buzzer dan sensor.
+2. BACA SENSOR: Merupakan proses looping pada bagian utama dari program. Pada bagian loop ini, nilai sensor akan dibaca terus-menerus.
+3. DECISION: Jika sensor mendeteksi gerakan, sistem akan mengirimkan pesan melalui Bot Telegram dan akan mengaktifkan Buzzer sebagai alarm. Jika tidak, program akan tetap berada dalam loop ini.
