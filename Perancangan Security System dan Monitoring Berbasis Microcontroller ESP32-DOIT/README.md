@@ -50,3 +50,13 @@ Penjelasan:
 1. SETUP: Merupakan proses insialisasi awal yang meiliputi koneksi Wi-Fi, pengaturan token Bot Telegram, dan pengaturan pin untuk buzzer dan sensor.
 2. BACA SENSOR: Merupakan proses looping pada bagian utama dari program. Pada bagian loop ini, nilai sensor akan dibaca terus-menerus.
 3. DECISION: Jika sensor mendeteksi gerakan, sistem akan mengirimkan pesan melalui Bot Telegram dan akan mengaktifkan Buzzer sebagai alarm. Jika tidak, program akan tetap berada dalam loop ini.
+
+Hasil & Analisa
+1. Batasan jarak yang dapat dideteksi oleh sensor sejauh : 5 meter.
+2. Sensor dapat mendeteksi objek yang bergerak cepat.
+3. Sensor terhubung dengan internet dan dapat mengirim pesan peringatan ke device pengguna melalui aplikasi Telegram dimanapun device pengguna berada.
+4. Sistem membutuhkan waktu kalibrasi untuk Sensor PIR selama: 10 - 60 Detik
+5. Tabel Pengujian Sistem
+   ![image](https://github.com/ArthurGregorius/ProyekPerkuliahan/assets/147962819/067f3113-1607-4a47-96e5-9506383ca581)
+
+   ![image](https://github.com/ArthurGregorius/ProyekPerkuliahan/assets/147962819/bea15ee9-d39b-40ff-8b66-9647ad8fec38)
