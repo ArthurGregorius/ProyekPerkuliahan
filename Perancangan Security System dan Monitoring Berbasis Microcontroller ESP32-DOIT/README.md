@@ -16,3 +16,17 @@ Dasar Teori
 2. ESP32-DOIT. ESP32 adalah modul mikrokontroler terintegrasi yang memiliki fitur lengkap dan kinerja tinggi. Modul ini merupakan pengembangan dari ESP8266, yang merupakan modul WiFi populer.ESP32 memiliki dua prosesor komputasi, satu prosesor untuk mengelola jaringan WIFI dan Bluetooth, serta satu prosesor lainnya untuk menjalankan aplikasi. Dilengkapi dengan memori RAM yang cukup besar untuk menyimpan data. Fitur yang berguna seperti TCP/IP, HTTP, dan FTP. Modul ini juga dilengkapi fitur pemrosesan sinyal analog, dukungan untuk sensor, dan dukungan untuk perangkat masukan/keluaran (I/O) digital. ESP32 juga memiliki dukungan untuk konektivitas Bluetooth. Dapat digunakan untuk mengendalikan perangkat yang terhubung dengan Bluetooth.
 3. Modul Sensor PIR (Passive Infrared Receiver). Sensor PIR atau Passive Infrared Receiver merupakan sensor yang digunakan untuk mendeteksi adanya pancaran sinar infra red dari suatu objek. Sensor PIR memiliki sifat pasif, yang berarti tidak memancarkan sinar infrared tetapi hanya dapat menerima radiasi sinar infra red dari luar. Sensor PIR dapat mendeteksi radiasi dari berbagai objek karena semua objek memancarkan energi radiasi, seperti ketika terdeteksi sebuah gerakan dari sumber infra red dengan suhu tertentu yaitu manusia mencoba melewati sumber infra red yang lain misalnya dinding, maka sensor akan membandingkan pancaran infra red yang diterima setiap satuan waktu, sehingga jika ada pergerakan maka akan terjadi perubahan pembacaan pada sensor. Sensor PIR terdiri dari beberapa bagian yaitu, Lensa Fresnel, Penyaring Infra Red, Sensor Pyroelektrik, Penguat Amplifier dan Komparator.
 4. Buzzer. Buzzer adalah sebuah komponen elektronika yang mengubah energy listrik menjadi energy Mekanik atau getaran. Energy getaran ini akan menghasilkan suara. Buzzer juga biasanya digunakan untuk indikator suara untuk alarm, input keypad, dan pemberitahuan kerusakan pada sebuah sistem elektronik, seperti di motherboard komputer. Buzzer ini biasanya memiliki tegangan kerja antara 3 volt sampai dengan 12 volt.
+
+Desain
+A. Skema Wiring
+
+![image](https://github.com/ArthurGregorius/ProyekPerkuliahan/assets/147962819/4d69294b-5783-4009-8698-c18f657fa998)
+
+![image](https://github.com/ArthurGregorius/ProyekPerkuliahan/assets/147962819/d44d6d4b-32ac-4989-9586-32f2659ea90f)
+
+Penjelasan Cara Kerja :
+1. Powerbank digunakan untuk memberikan sumber daya berupa tegangan ke dalam ESP32, buzzer, serta sensor PIR.
+2. ESP32 digunakan sebagai mikrokontroler dari sistem yang akan dijalankan. ESP32 sudah diberikan program untuk menjalankan sistem.
+3. Sensor gerak PIR berfungsi sebagai pendeteksi objek bergerak yang melewati area sensor tersebut. Sensor akan menghasilkan output berupa sinyal ke ESP32 dan akan diteruskan ke dalam buzzer pada waktu yang bersamaan. Selain itu, pesan peringatan juga akan dikirimkan kepada pengguna via Telegram.
+4. ESP32 berfungsi untuk mengirimkan sinyal ke dua komponen, pertama yakni Buzzer dan kedua ke aplikasi Telegram yang akan dikirim secara bersamaan.
+5. Buzzer berfungsi sebagai alarm peringatan jika ada objek yang melintas.
