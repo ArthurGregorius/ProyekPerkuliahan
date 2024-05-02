@@ -1,8 +1,49 @@
 # Filter dan Window
 
-Filter dalam pemrosesan sinyal digital adalah algoritma atau perangkat lunak yang digunakan untuk memanipulasi sinyal input dengan cara tertentu. Tujuannya bisa bermacam-macam, misalnya untuk menghilangkan noise, menyoroti frekuensi tertentu, atau mengubah karakteristik sinyal. Filter dapat dibagi menjadi dua jenis utama: filter waktu (time-domain) dan filter frekuensi (frequency-domain).
-- Filter Waktu: Filter yang beroperasi langsung pada domain waktu sinyal. Misalnya, filter rata-rata (moving average), filter Gaussian, atau filter deret Fourier.
-- Filter Frekuensi: Filter yang beroperasi pada domain frekuensi sinyal. Contohnya termasuk filter low-pass, high-pass, band-pass, dan band-stop. Filter ini bekerja dengan cara memanipulasi komponen frekuensi dari sinyal.
+### Filter
 
-Dalam konteks pemrosesan sinyal, jendela (window) adalah fungsi matematis yang digunakan untuk membatasi sinyal dalam interval waktu tertentu atau untuk memberikan bobot pada bagian tertentu dari sinyal. Jendela sering digunakan dalam teknik seperti analisis spektrum dengan Transformasi Fourier atau dalam teknik seperti Short-Time Fourier Transform (STFT) atau Discrete Fourier Transform (DFT).
-- Jendela Waktu: Jendela yang digunakan untuk membatasi sinyal dalam interval waktu tertentu. Misalnya, jendela persegi (rectangular window), jendela Hamming, jendela Hanning, dan sebagainya. Masing-masing jendela memiliki karakteristik yang berbeda dalam hal resolusi frekuensi dan penurunan sinyal di tepi jendela.
+Filter adalah alat yang digunakan untuk memanipulasi sinyal dengan cara melewatkan atau menolak komponen-komponen tertentu dari sinyal tersebut. Filter dapat digunakan untuk berbagai tujuan seperti:
+
+1. Reduksi Noise: Menghilangkan atau mereduksi komponen noise yang tidak diinginkan dari sinyal.
+2. Pemisahan Komponen: Memisahkan komponen sinyal yang berbeda yang tumpang tindih dalam domain waktu atau frekuensi.
+3. Emphasis Frekuensi: Memperjelas atau menekankan komponen frekuensi tertentu dalam sinyal.
+4. Penghalusan Sinyal: Meratakan atau menghaluskan sinyal dengan menghapus fluktuasi cepat atau spike yang tidak diinginkan.
+
+#### Jenis-jenis Filter:
+
+Ada beberapa jenis filter yang umum digunakan dalam pengolahan sinyal digital:
+
+1. **FIR (Finite Impulse Response)**:
+   - Filter dengan respons impuls berhingga dalam jumlah sampel waktu.
+   - Karakteristiknya ditentukan oleh koefisien yang tetap.
+   - Umumnya lebih stabil dan lebih mudah diimplementasikan secara numerik.
+
+2. **IIR (Infinite Impulse Response)**:
+   - Filter dengan respons impuls yang dapat berlangsung dalam waktu tak terbatas.
+   - Memiliki umpan balik yang dapat menyebabkan respons frekuensi yang lebih kompleks.
+   - Dapat memperkenalkan resonansi atau osilasi jika tidak dirancang dengan hati-hati.
+
+3. **Filter Linear dan Nonlinear**:
+   - Filter linear mempertahankan sifat superposisi, sehingga outputnya adalah jumlah dari pengaruh setiap komponen masukan.
+   - Filter nonlinear tidak mematuhi sifat superposisi.
+
+### Window
+
+Windowing adalah teknik yang digunakan dalam analisis sinyal untuk membatasi durasi sinyal dan mengurangi efek sisi dari sinyal tersebut. Ini dilakukan dengan mengalikan sinyal asli dengan fungsi window (jendela). Tujuan utama penggunaan window adalah untuk:
+
+1. Mengurangi Efek Sisi: Mengurangi efek sisi atau distorsi yang muncul dalam hasil analisis sinyal akibat adanya tepian pada sinyal.
+2. Membatasi Durasi: Memastikan bahwa analisis dilakukan pada bagian yang relevan dari sinyal dan mengurangi gangguan dari bagian sinyal yang tidak relevan.
+3. Meminimalkan Aliasing: Meminimalkan efek aliasing yang terjadi saat sinyal yang dianalisis tidak representatif secara periodik.
+
+#### Jenis-jenis Window:
+
+Beberapa jenis fungsi window yang umum digunakan dalam pengolahan sinyal digital termasuk:
+
+1. **Jendela Rektangular**: Sederhana, memberi bobot sama pada semua sampel dalam sinyal.
+2. **Jendela Hamming**: Meningkatkan efisiensi dalam menekan sinyal tepian dengan mengurangi efek sisi.
+3. **Jendela Hanning**: Mirip dengan Hamming, tetapi memiliki karakteristik yang sedikit berbeda dalam mengurangi efek sisi.
+4. **Jendela Blackman**: Lebih kompleks daripada Hamming atau Hanning, memberikan kontrol yang lebih baik terhadap efek sisi.
+
+### Penggunaan Bersama Filter dan Window:
+
+Dalam banyak aplikasi, filter dan window sering digunakan bersama-sama. Misalnya, dalam analisis spektrum sinyal, sinyal sering kali di-window terlebih dahulu untuk meminimalkan efek tepian, kemudian filter FIR atau IIR dapat diterapkan untuk menekankan atau menolak komponen frekuensi tertentu. Dengan menggunakan teknik ini, informasi yang lebih baik dapat diekstraksi dari sinyal, dan efek dari tepian sinyal (seperti aliasing) dapat diminimalkan.
