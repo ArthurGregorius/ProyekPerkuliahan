@@ -43,3 +43,15 @@ Beberapa jenis fungsi window yang umum digunakan dalam pengolahan sinyal digital
 2. **Jendela Hamming**: Meningkatkan efisiensi dalam menekan sinyal tepian dengan mengurangi efek sisi.
 3. **Jendela Hanning**: Mirip dengan Hamming, tetapi memiliki karakteristik yang sedikit berbeda dalam mengurangi efek sisi.
 4. **Jendela Blackman**: Lebih kompleks daripada Hamming atau Hanning, memberikan kontrol yang lebih baik terhadap efek sisi.
+
+
+
+Tentu, mari kita lihat jenis-jenis window yang umum digunakan dalam pengolahan sinyal digital dengan penjelasan yang lebih sederhana:
+
+1. **Jendela Rektangular**: Paling sederhana, memberi bobot sama pada semua bagian sinyal. Tidak baik dalam mengurangi efek sisi.
+2. **Jendela Hamming**: Mengurangi efek sisi lebih baik daripada jendela rektangular. Lebih baik, tetapi masih ada sedikit gangguan.
+3. **Jendela Hanning**: Mirip dengan Hamming, tapi lebih baik dalam mengurangi efek sisi. Sedikit lebih baik daripada Hamming, tapi masih ada sedikit gangguan di tengah sinyal.
+4. **Jendela Blackman**: Salah satu yang paling sering digunakan. Mengurangi efek sisi dengan sangat baik, tetapi ada sedikit gangguan di tengah sinyal.
+5. **Jendela Bartlett (Triangular)**: Bentuk segitiga, membantu mengurangi efek sisi. Kurang tajam dalam mengurangi gangguan dibandingkan Blackman.
+6. **Jendela Kaiser**: Dapat disesuaikan untuk berbagai kebutuhan. Anda bisa mengontrol seberapa baiknya jendela mengurangi efek sisi.
+7. **Jendela Nuttall**: Varian dari Blackman, mengurangi efek sisi dengan sangat baik. Baik digunakan jika Anda menginginkan penurunan yang cepat terhadap efek sisi.
