@@ -43,7 +43,3 @@ Beberapa jenis fungsi window yang umum digunakan dalam pengolahan sinyal digital
 2. **Jendela Hamming**: Meningkatkan efisiensi dalam menekan sinyal tepian dengan mengurangi efek sisi.
 3. **Jendela Hanning**: Mirip dengan Hamming, tetapi memiliki karakteristik yang sedikit berbeda dalam mengurangi efek sisi.
 4. **Jendela Blackman**: Lebih kompleks daripada Hamming atau Hanning, memberikan kontrol yang lebih baik terhadap efek sisi.
-
-### Penggunaan Bersama Filter dan Window:
-
-Dalam banyak aplikasi, filter dan window sering digunakan bersama-sama. Misalnya, dalam analisis spektrum sinyal, sinyal sering kali di-window terlebih dahulu untuk meminimalkan efek tepian, kemudian filter FIR atau IIR dapat diterapkan untuk menekankan atau menolak komponen frekuensi tertentu. Dengan menggunakan teknik ini, informasi yang lebih baik dapat diekstraksi dari sinyal, dan efek dari tepian sinyal (seperti aliasing) dapat diminimalkan.
